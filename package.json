@@ -2,7 +2,12 @@
   "name": "angular-siddhanath",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "clean": "gulp clean",
+    "compile": "gulp compile",
+    "build": "gulp build",
+    "copyasset": "gulp copy:assets",
+    "//start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start": "concurrent --kill-others \"gulp watch\" \"lite-server\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
@@ -37,6 +42,13 @@
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.8.0",
+    "del": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^6.1.1 ",
+    "tslint": "^3.5.0",
+    "ts-node": "^1.3.0",
     "typings": "^1.4.0"
   }
 }

@@ -1,1 +1,6 @@
-registryURL=http://api.typings.org/
+{
+  "rejectUnauthorized": false,
+  "registryURL": "http://api.typings.org/",
+  "defaultSource": "dt",
+  "proxy": "proxygw-emeacatch.int.gtm.inbcu.com:80"
+}
