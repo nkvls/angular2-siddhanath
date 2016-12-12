@@ -62,7 +62,7 @@ transparentDiv {
     left: 50px;
     z-index: 999;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     opacity: 0.6;
     cursor: pointer;
 }
@@ -80,5 +80,19 @@ transparentDiv {
 
 .tokenDiv:hover .text-label {
     visibility: visible;
+}
+
+strong {
+    color: #8e0000;
+}
+
+.columnDivideLine {
+    display:inline-block;
+    background-color:#feeb7b;
+    width:2px;
+    vertical-align: top;
+    margin-top:180px;
+    margin-right:10px;
+    height:500px;
 }
 
